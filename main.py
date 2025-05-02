@@ -2,7 +2,8 @@ import telebot
 from quotexpy import Quotex
 import threading
 
-TOKEN = '8062456396:AAE5ZyplGKP8AsCDWt_m3gsQbTA6IUrA4EM'
+import os
+TOKEN = os.getenv('TOKEN')
 bot = telebot.TeleBot(TOKEN)
 users = {}
 
